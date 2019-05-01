@@ -31,7 +31,7 @@ namespace PackerTracker
           name: "default",
           template: "{controller=Home}/{action=Index}/{id?}");
       });
-
+        app.UseDeveloperExceptionPage();
         app.UseStaticFiles();
 
       app.Run(async (context) =>

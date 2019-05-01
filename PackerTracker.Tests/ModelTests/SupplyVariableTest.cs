@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using PackerTracker.Models;
 using System;
 
-namespace SupplyTracker.Tests
+namespace PackerTracker.Tests
 {
   [TestClass]
-  public class SuppliesVariableTest : IDisposable
+  public class SupplyVariableTest : IDisposable
   {
     public void Dispose()
     {
@@ -22,7 +22,7 @@ namespace SupplyTracker.Tests
       Supply newSupply= new Supply("backpack", true, 5, false);
 
       //Act
-      int result = newSupply.TotalWeight;
+      int result = newSupply.TotalWeight();
 
       //Assert
       Assert.AreEqual(5, result);

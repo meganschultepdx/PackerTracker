@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>PackerTracker</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie|The+Girl+Next+Door" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/styles.css">
+  </head>
+  <body>
+    <h1>Your Backpacking Supplies</h1>
+
+    <form action="/supply" method="post">
+
+      <label for="name">Add name of supply:</label>
+      <input id="name" name="name" type="text"><br>
+
+      <label for="packed">Is your supply packed (Y/N):</label>
+      <input id="packed" name="packed" type="text"><br>
+
+      <label for="weight">Enter the weight of your supply, rounded to the neares pound:</label>
+      <input id="weight" name="weight" type="number" max=2147483647><br>
+
+      <label for="needToBuy">Do you need to buy this supply (Y/N):</label>
+      <input id="needToBuy" name="needToBuy" type="text">
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
